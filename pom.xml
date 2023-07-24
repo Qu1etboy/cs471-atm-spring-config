@@ -8,11 +8,23 @@
     <artifactId>atm</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <properties>
+    <!-- <properties>
         <java.version>1.8</java.version>
+    </properties> -->
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
-    <build>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>6.0.11</version>
+        </dependency>
+    </dependencies>
+
+    <!-- <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -23,6 +35,6 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
+    </build> -->
 
 </project>
